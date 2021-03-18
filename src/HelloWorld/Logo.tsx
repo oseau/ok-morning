@@ -1,6 +1,7 @@
-import {interpolate, spring, useCurrentFrame, useVideoConfig} from 'remotion';
-import {Arc} from './Arc';
-import {Atom} from './Atom';
+import { interpolate, spring, useCurrentFrame, useVideoConfig } from "remotion";
+
+import { Arc } from "./Arc";
+import { Atom } from "./Atom";
 
 export const Logo: React.FC<{
 	transitionStart: number;
@@ -54,6 +55,8 @@ export const Logo: React.FC<{
 		[0, videoConfig.durationInFrames],
 		[0, 360]
 	);
+
+	console.log(`translation: ${translation}`);
 
 	return (
 		<div

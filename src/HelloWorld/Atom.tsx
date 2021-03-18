@@ -1,5 +1,6 @@
-import {useVideoConfig} from 'remotion';
-import {COLOR_1, COLOR_2} from './config';
+import { useVideoConfig } from "remotion";
+
+import { COLOR_1, COLOR_2 } from "./config";
 
 export const Atom: React.FC<{
 	scale: number;
